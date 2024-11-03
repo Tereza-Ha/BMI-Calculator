@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c4d7ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #001f3f;
+  width: 300px;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.bmiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.heightLabel,
+.weightLabel {
+  font-weight: 600;
+  padding-bottom: 4px;
+  padding-top: 15px;
+}
+
+#heightInput,
+#weightInput {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3px 5px 3px 5px;
+  width: 200px;
+}
+
+#submit {
+  margin-top: 15px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #f1d5ec;
+}
+
+#submit:hover {
+  background-color: #c59bbe;
+}
+
+.output-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 756px) {
+  body {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}

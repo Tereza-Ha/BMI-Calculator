@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="content">
+      <h1>BMI calculator</h1>
+      <section class="input-container">
+        <form class="bmiForm">
+          <label class="heightLabel" for="heightInput">Height</label>
+          <input
+            type="text"
+            id="heightInput"
+            placeholder="height in meters"
+            name="heightInput"
+          />
+
+          <label class="weightLabel" for="weightInput">Weight</label>
+          <input
+            type="text"
+            id="weightInput"
+            placeholder="weight in kg"
+            name="weightInput"
+          />
+
+          <input id="submit" type="submit" value="Count my BMI" />
+        </form>
+      </section>
+
+      <section class="output-container">
+        <div class="results">
+          <p>Result:</p>
+          <p class="text"></p>
+          <p class="bmi-Range"></p>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
